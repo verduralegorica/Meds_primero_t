@@ -1,0 +1,32 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block app_styles %}
+<style>
+    .otree-form-errors {
+        display: none;
+    }
+</style>
+{% endblock %}
+
+{% block title %}PARTE I. Comprensión de las instrucciones: pregunta {{ page_number }} {% endblock %}
+
+{% block content %}
+<font color="burlywood"><h4 align="right">Tu ID: {{ participant_id }}</h4></font>
+<br>
+    <p>{{ question }}</p>
+    {% formfields %}
+
+{% if player.q_incorrect_attempts > 0 %}
+        <p><font color=#b94a48>{{ incorrect_answer }}</p>
+        </font>
+{% endif %}
+
+{% next_button %}
+
+<br><br>
+    <p>
+    {% include Constants.contact_template %}
+    </p>
+
+{% endblock %}
