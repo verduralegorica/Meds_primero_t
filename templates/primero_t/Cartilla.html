@@ -1,0 +1,24 @@
+{% extends "global/Page.html" %}
+{% load otree %}
+
+{% block title %}PARTE II. Cuestionario principal: sección 1{% endblock %}
+
+{% block content %}
+<font color="burlywood"><h4 align="right">Tu ID: {{ participant_id }}</h4></font>
+<br>
+<p> Antes de responder las preguntas de esta parte del experimento, queremos que le des un vistazo a esta cartilla
+    elaborada con información recogida por el Ministerio de Salud de Perú.  </p>
+<br>
+<img src="{% static 'cartilla.png' %}" width="1200px"/>
+<br>
+{% next_button %}
+
+    {% include Constants.instructions_button %}
+<br>
+<br>
+    <p>
+    {% include Constants.contact_template %}
+    </p>
+
+{% endblock %}
+

@@ -1,0 +1,48 @@
+{% extends "global/Page.html" %}
+{% load otree %}
+
+{% block title %}Instrucciones{% endblock %}
+
+{% block content %}
+<font color="burlywood"><h4 align="right">Tu ID: {{ participant_id }}</h4></font>
+<br>
+
+<h4> La presente sesión consta de tres partes:</h4>
+<ul>
+    <li> La <b> PARTE I </b> consiste en un cuestionario de comprensión de las instrucciones presentadas. Este está compuesto por cuatro preguntas; por cada respuesta correcta, ganará S/ 0.20. Es decir, podrá ganar hasta S/ 0.80 adicionales a los S/5.00 que le pagaremos por la participación en la sesión. </li>
+    <li> La <b> PARTE II </b> consiste en el desarrollo de un cuestionario sobre la compra y el uso de medicamentos, denominado “Cuestionario Principal”. Este, a su vez, se divide en dos secciones:
+        <ul>
+            <li> En la primera sección, se presentarán cuatro casos hipotéticos para los cuales deberá elegir entre dos opciones de medicamentos presentados, o indicar la disposición a pagar de los medicamentos presentados, según corresponda. </li>
+            <li> En la segunda sección, se presentarán nueve enunciados relacionados con la compra de medicamentos. A partir de ellos, deberá indicar qué tan de acuerdo está con dichas afirmaciones. </li>
+        </ul>
+
+    <li> La <b> PARTE III </b> consiste en una encuesta sobre (i) sus preferencias de compra y familiaridad con medicamentos y (ii) datos generales.
+        Cabe resaltar que aunque se solicitó tus datos personales para la inscripción a esta sesión, las respuestas brindadas en la misma serán usadas de forma <b>ANÓNIMA</b>. </li>
+</ul>
+
+<br>
+
+<h4>Información adicional para el experimento en línea</h4>
+
+<h5>Contacto</h5>
+<p>
+    Si tienes un problema o pregunta, no dudes en contactarnos a este número por WhatsApp o llamada al
+    <a href="https://wa.me/0051985488009" target="_blank">+51 985 488 009</a>.
+    Este número también estará en todas las pantallas debajo del botón siguiente.
+</p>
+<h5>Información de Pago</h5>
+<p>
+La última página del experimento contiene un enlace a un formulario donde registrarás la información para efectuar tu pago.
+Debes tener a la mano los datos asociados al método con el que deseas que te hagamos el pago:
+</p>
+    <ul>
+    <b> (i) </b>  un número y nombre asociados a un aplicativo móvil de pago: Yape (BCP), Lukita (BBVA) o Tunki (Interbank); o
+    <b> (ii) </b> un número cuenta o CCI con el nombre del titular para recibir una transferencia bancaria o interbancaria. Debes llegar
+    a la última página para poder contar la información para poder pagarte.
+    </ul>
+
+<br>
+
+{% next_button %}
+
+{% endblock %}
