@@ -14,7 +14,7 @@ class Instrucciones(Page):
     timeout_seconds = 300
 
     def is_displayed(self):
-        if self.participant.vars['is_mobile'] is False:
+        if self.participant.vars['MobilePhones'] is False:
             return True
         else:
             return False
@@ -84,7 +84,7 @@ class Entendimiento(Page):
         self.participant.vars['quiz_questions_correct'] = self.player.num_correct
         self.player.payoff = self.player.quiz_earnings
 
-        if self.participant.vars['is_mobile'] is False:
+        if self.participant.vars['MobilePhones'] is False:
             return True
         else:
             return False
@@ -101,7 +101,7 @@ class Cartilla(Page):
     form_model = 'player'
 
     def is_displayed(self):
-        if self.participant.vars['is_mobile'] is False:
+        if self.participant.vars['MobilePhones'] is False:
             return True
         else:
             return False
