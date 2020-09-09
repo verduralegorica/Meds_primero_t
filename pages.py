@@ -11,7 +11,7 @@ class Instrucciones(Page):
 
     def vars_for_template(self):
         return dict(participant_id=self.participant.label)
-    timeout_seconds = 300
+
 
     def is_displayed(self):
         if self.participant.vars['MobilePhones'] is False:
@@ -67,6 +67,15 @@ class Entendimiento(Page):
         if player.q_incorrect_attempts == 0 and self.timeout_happened is False:
             player.num_correct += 1
             player.quiz_earnings += Constants.payment_per_answer
+            if player.quiz_page_counter == 1:
+                self.participant.vars['ea1'] += 1
+            if player.quiz_page_counter == 2:
+                self.participant.vars['ea2'] += 1
+            if player.quiz_page_counter == 3:
+                self.participant.vars['ea3'] += 1
+            if player.quiz_page_counter == 4:
+                self.participant.vars['ea4'] += 1
+
 
         self.participant.vars['quiz_earnings'] += player.quiz_earnings
         player.error_sequence += str(player.q_incorrect_attempts)

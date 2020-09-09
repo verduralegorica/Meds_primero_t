@@ -26,7 +26,7 @@ class Constants(BaseConstants):
     instructions_button = "meds_primero_t/Instructions_Button.html"
     contact_template = "meds_primero_t/Contactenos.html"
 
-    name_in_url = 'pxe_nto_med1'  # name in webbrowser
+    name_in_url = 'experimento_de_medicamentos1'  # name in webbrowser
 
 
     # Respuestas del quiz de entendimiento
@@ -85,6 +85,10 @@ class Subsession(BaseSubsession):
             p.participant.vars['final_payoff'] = 0
             p.participant.vars['quiz_payoff'] = 0
             p.participant.vars['quiz_earnings'] = 0
+            p.participant.vars['ea1'] = 0
+            p.participant.vars['ea2'] = 0
+            p.participant.vars['ea3'] = 0
+            p.participant.vars['ea4'] = 0
 
 class Group(BaseGroup):
     pass
