@@ -39,16 +39,16 @@ class Constants(BaseConstants):
 
     #Preguntas del quiz de entendimiento
 
-    preguntas_quiz = ['¿En qué consiste el cuestionario que se brindará en la segunda parte de la sesión?',
-                      '¿Cuántos casos hipotéticos se presentarán en la primera sección del “Cuestionario Principal”?',
-                      '¿En qué consiste la segunda sección del “Cuestionario Principal”?',
-                      '¿Cuántos enunciados se presentarán en la segunda parte del “Cuestionario Principal”?']
+    preguntas_quiz = ['¿De qué trata el cuestionario que se brindará en la PARTE II de la sesión?',
+                      '¿Cuántos casos hipotéticos se encuentran en la PARTE II?',
+                      '¿En qué consiste la PARTE III?',
+                      '¿Cuántos enunciados se presentarán en PARTE III?']
 
     # Displayed answers
-    quiz_answers = ['Compra y uso de medicamentos', 'Cuatro casos hipotéticos',
+    quiz_answers = ['Compra y uso de medicamentos', 'Seis casos hipotéticos',
                     'Indicar qué tan de acuerdo estás con enunciados presentados',
                     'Nueve enunciados']
-    respuestas_quiz = ['Compra y uso de medicamentos', 'Cuatro casos hipotéticos',
+    respuestas_quiz = ['Compra y uso de medicamentos', 'Seis casos hipotéticos',
                        'Indicar qué tan de acuerdo estás con enunciados presentados',
                        'Nueve enunciados']
 
@@ -57,10 +57,10 @@ class Constants(BaseConstants):
                   [2, 'Compra y uso de medicamentos'],
                   [3, 'Uso y preferencias de aplicativos móviles'],
                   [4, 'Compras de productos en línea']]
-    q2_choices = [[1, 'Dos casos hipotéticos'],
-                  [2, 'Tres casos hipotéticos'],
-                  [3, 'Cuatro casos hipotéticos'],
-                  [4, 'Cinco casos hipotéticos']]
+    q2_choices = [[1, 'Cuatro casos hipotéticos'],
+                  [2, 'Cinco casos hipotéticos'],
+                  [3, 'Seis casos hipotéticos'],
+                  [4, 'Siete casos hipotéticos']]
     q3_choices = [[1, 'Indicar qué tan de acuerdo estás con enunciados presentados'],
                   [2, 'Elegir entre dos opciones específicas presentadas'],
                   [3, 'Responder detalladamente a las preguntas presentadas'],
