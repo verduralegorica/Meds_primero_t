@@ -26,7 +26,7 @@ class Constants(BaseConstants):
     instructions_button = "meds_primero_t/Instructions_Button.html"
     contact_template = "meds_primero_t/Contactenos.html"
 
-    name_in_url = 'experimento_de_medicamentos1t'  # name in webbrowser
+    name_in_url = 'experimento_de_medicamentos1'  # name in webbrowser
 
 
     # Respuestas del quiz de entendimiento
